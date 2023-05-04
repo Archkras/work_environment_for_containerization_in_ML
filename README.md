@@ -1,2 +1,2 @@
-# work_environment_for_containerization_in_ML
-Create for ODS corce MLOPS production approach.
+This repo is create for ODS session **work_environment_for_containerization_in_ML**
+

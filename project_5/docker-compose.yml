@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  project_4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: project_5_service
+    entrypoint: [ "python", "-u", "/app/script.py" ]

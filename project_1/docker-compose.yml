@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  jupyter_min:
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    user: root
+    environment:
+      - JUPYTER_TOKEN=token
+      - GRANT_SUDO=yes
+    volumes:
+      # this is you folder for projects mount in to container folder
+      - .:/home/jovyan/project_1
+    ports:
+      - 8881:8888
+    container_name: jupyter_lab_for_project_1
