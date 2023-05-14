@@ -17,6 +17,7 @@ RUN pip install \
     "pandas>=0.19" \
     "scikit-learn>=0.24.1" \
     "scipy>=1.3.0" \
+    "yfinance" \
     "PyPortfolioOpt"
 
 

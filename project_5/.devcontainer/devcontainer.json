@@ -18,7 +18,12 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance"
-			]
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"python.pythonPath": "/usr/local/bin/python",
+				"python.analysis.extraPaths": ["/home/project_5/.local/lib/python3.10/site-packages"]
+			}
 		}
 	},
 

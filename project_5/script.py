@@ -22,7 +22,7 @@ from pypfopt import risk_models
 from pypfopt import plotting
 
 mu = expected_returns.capm_return(prices)
-mu
+mu # type: ignore 
 
 from pypfopt import EfficientFrontier
 
@@ -76,10 +76,10 @@ S = risk_models.CovarianceShrinkage(prices).ledoit_wolf()
 ef = EfficientFrontier(mu, S)  # weight_bounds automatically set to (0, 1)
 ef.add_sector_constraints(sector_mapper, sector_lower, sector_upper)
 
-amzn_index = ef.tickers.index("AMZN")
+amzn_index = ef.tickers.index("AMZN") # type: ignore 
 ef.add_constraint(lambda w: w[amzn_index] == 0.10)
 
-tsla_index = ef.tickers.index("TSLA")
+tsla_index = ef.tickers.index("TSLA") # type: ignore 
 ef.add_constraint(lambda w: w[tsla_index] <= 0.05)
 
 ef.add_constraint(lambda w: w[10] >= 0.05)
