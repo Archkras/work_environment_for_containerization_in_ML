@@ -11,14 +11,14 @@ RUN apt-get update  && \
 
 USER $NB_UID
 RUN pip install \
-    "cvxpy>=1.1.19" \
-    "matplotlib>=3.2.0" \
-    "numpy>=1.0.0" \
-    "pandas>=0.19" \
-    "scikit-learn>=0.24.1" \
-    "scipy>=1.3.0" \
-    "yfinance" \
-    "PyPortfolioOpt"
+    "cvxpy==1.4.2" \
+    "matplotlib==3.6.0" \
+    "numpy==1.23.3" \
+    "pandas==1.5" \
+    "scikit-learn==1.1.2" \
+    "scipy==1.9.1" \
+    "yfinance==0.2.36" \
+    "PyPortfolioOpt==1.5.5"
 
 
 #RUN conda install --quiet --yes \
